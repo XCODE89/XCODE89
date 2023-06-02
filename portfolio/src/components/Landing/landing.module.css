@@ -1,0 +1,23 @@
+.app {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .app.dark-mode {
+    background-color: red;
+    color: #fff;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-top: 40px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
