@@ -1,4 +1,8 @@
 * {
-    background-color: rgb(32, 24, 31);
+margin : 0
+}
+
+.app {
+    background-color: rgb(245, 247, 247);
     min-height: 97vh;
 }

@@ -1,30 +1,23 @@
 import React, { useState } from 'react';
-import styles from "./landing.module.css"
+import style from "./landing.module.css"
 import darkModeImage from '../../images/desconocida.jpg';
 import lightModeImage from '../../images/fondo1.jpg';
+import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
-    const [darkMode, setDarkMode] = useState(false);
-
-    const toggleDarkMode = () => {
-      setDarkMode(!darkMode);
-    };
   
     return (
-        <div className={`${styles.app}  ${darkMode ? styles['dark-mode'] : ''}`}>
-        <header>
-          <h1>¡Bienvenido a mi portfolio!</h1>
-          <button onClick={toggleDarkMode}>
-            {darkMode ? 'Modo Claro' : 'Modo Oscuro'}
-          </button>
-        </header>
-        <div className={styles.content}>
-          <img
-            src={darkMode ? darkModeImage : lightModeImage}
-            alt="Imagen de fondo"
-          />
+      <div className={style.container}>
+          <img src={darkModeImage} className={style.image}/>
+          <div className={style.textContainer}>
+            <h1 className={style.content}>¡Hola, Soy Andrea!<br/>Soy desarrollador Full Stack</h1>
+            <div className={style.languajes}>
+              <div>javascript</div>
+              <div>python</div>
+            </div>
+            <NavLink to="/home" className={style.button}>CONOCEME</NavLink>
+          </div>
         </div>
-      </div>
     );
   }
   
