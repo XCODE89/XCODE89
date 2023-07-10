@@ -15,7 +15,7 @@ const Landing = () => {
               <div>javascript</div>
               <div>python</div>
             </div>
-            <NavLink to="/home" className={style.button}>CONOCEME</NavLink>
+            <NavLink to="/about" className={style.button}>CONOCEME</NavLink>
           </div>
         </div>
     );

@@ -1,23 +1,25 @@
-import {Routes, Route} from "react-router-dom"
-import {Provider} from "react-redux"
+import {Routes, Route, useLocation} from "react-router-dom"
 
 import style from "./App.module.css";
+import NavBar from "./components/NavBar/navBar";
 import Landing from "./components/Landing/landing";
-import Home from "./components/Home/home"
-import store from "./redux/store";
+import About from "./components/About/about"
+import Projects from "./components/Proyects/proyects"
+import Contact from "./components/Contact/contact"
 
 function App() {
   return (
-    // <Provider store={store}>
       <div className={style.app}>
-        {}
+        <NavBar/>
         <Routes>
-          <Route path="/" element={<Landing/>}/>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/landing" element={<Landing/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
-    // </Provider>
   );
 }
 
 export default App;
+

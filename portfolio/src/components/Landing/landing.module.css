@@ -1,6 +1,6 @@
-* {
-  border: 2px solid red;
-}
+/* * {
+  border: 1px solid red;
+} */
 
 .container {
   display: flex;
@@ -8,7 +8,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url(../../images/fondo1.jpg);
+  padding-top: 50px;
 }
 
 .textContainer {
@@ -27,7 +27,6 @@
 
 .languajes {
   display: flex;
-  border: 2px solid blue;
   flex-direction: row;
 }
 

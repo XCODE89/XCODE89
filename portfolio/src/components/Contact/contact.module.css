@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 94vh;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 50px;
+    color: rgb(161, 198, 234)
+}
+
+.content {
+    display: flex;
+    color: rgb(187, 209, 234)
+
+}
+
+.shadowTitle {
+    width: 20%;
+    font-size: 100px;
+    margin-top: -42px;
+    font-weight: bolder;
+    color: lightgray;
+}
+
+.secondBlock {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.linea {
+    border-top: 10px solid blue;
+    width: 25%;
+}
+
+.infoContainer {
+    display: flex;
+}
+
+.socialContainer {
+    display: flex;
+}
+
+.formMap {
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,8 +1,17 @@
 * {
-margin : 0
+margin : 0;
 }
 
 .app {
-    background-color: rgb(245, 247, 247);
+    background-color: rgb(7, 12, 20);
     min-height: 97vh;
+    /* overflow-y: visible; */
 }
+
+/* paleta de colores:
+    background-color: rgb(7, 12, 20);
+    background-color: rgb(80, 125, 188);
+    background-color: rgb(161, 198, 234);
+    background-color: rgb(187, 209, 234);
+    background-color: rgb(218, 227, 229); */
+    

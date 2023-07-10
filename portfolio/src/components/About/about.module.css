@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: 97vh;
+    padding-top: 50px;
+}
+
+.titleContainer {
+    display: flex;
+    min-width: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.shadow {
+    width: 20%;
+    font-size: 100px;
+    margin-top: -40px;
+    font-weight: bolder;
+    color: lightgray;
+}
+
+.title {
+    font-size: 50px;
+    color: rgb(161, 198, 234)
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(187, 209, 234)
+}
+
+.text {
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+
+.button {
+    padding: 5px;
+    padding-inline: 30px;
+}
+
+.techs {
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-evenly;
+    width: 100%;
+}
