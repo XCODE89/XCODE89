@@ -12,7 +12,7 @@ const NavBar = () => {
     return (
         <div className={style.container}>
             <div className={style.itemContainer}>
-                <NavLink to="/landing" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</NavLink>
+                <NavLink to="/" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</NavLink>
                 <div className={selected==="HOME"?style.shadow:null}></div>
             </div>
             <div className={style.itemContainer}>

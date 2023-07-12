@@ -23,6 +23,7 @@
   align-items: center;
   margin-left: -3em;
   font-size: 50px;
+  color: rgb(218, 227, 229);
 }
 
 .languajes {
@@ -31,7 +32,7 @@
 }
 
 .image {
-  width: 40em;
+  width: 30em;
 }
 
 .button {

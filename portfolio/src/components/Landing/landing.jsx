@@ -5,7 +5,7 @@ import lightModeImage from '../../images/fondo1.jpg';
 import { NavLink } from 'react-router-dom';
 
 const Landing = () => {
-  
+  window.scrollTo(0, 0);
     return (
       <div className={style.container}>
           <img src={darkModeImage} className={style.image}/>

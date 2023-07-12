@@ -3,9 +3,10 @@ margin : 0;
 }
 
 .app {
-    background-color: rgb(7, 12, 20);
-    min-height: 97vh;
+    /* background-color: rgb(7, 12, 20);
+    min-height: 97vh; */
     /* overflow-y: visible; */
+
 }
 
 /* paleta de colores:
@@ -13,5 +14,10 @@ margin : 0;
     background-color: rgb(80, 125, 188);
     background-color: rgb(161, 198, 234);
     background-color: rgb(187, 209, 234);
-    background-color: rgb(218, 227, 229); */
+    background-color: rgb(218, 227, 229); 
+    background-color: #070c14;
+    background-color: #507dbc;
+    background-color: #a1c6ea;
+    background-color: #bbd1ea;
+    background-color: #dae3e5;*/
     

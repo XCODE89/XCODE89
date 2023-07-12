@@ -1,6 +1,13 @@
 import style from "./about.module.css"
+import express from "../../images/logos/ExpressJs.png"
+import mongo from "../../images/logos/MongoDB.png"
+import node from "../../images/logos/NodeJs.png"
+import postgre from "../../images/logos/PostgreSQL.png"
+import python from "../../images/logos/Python.png"
+import react from "../../images/logos/React.png"
 
 const About = () => {
+    window.scrollTo(0, 0);
     return (
         <div className={style.container}>
             <div className={style.titleContainer}>
@@ -8,7 +15,9 @@ const About = () => {
                     <h1 className={style.title}>
                         SOBRE MI
                     </h1>
-                    <div className={style.shadow}>S</div>
+                    <div className={style.shadow}>
+                        S
+                    </div>
                 </div>
             </div>
             <div className={style.content}>
@@ -20,13 +29,26 @@ const About = () => {
                 <div className={style.buttons}>
                     <button className={style.button}>descargar cv</button>
                 </div>
-                <div className={style.techs}>
-                    <div>react</div>
-                    <div>redux</div>
-                    <div>express</div>
-                    <div>nodejs</div>
-                    <div>postgres</div>
-                    <div>javascript</div>
+                <div className={style.techsContainer}>
+                    <div className={style.tech}>
+                        <img src={react} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={express} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={node} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={postgre} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={mongo} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={python} className={style.image}/>
+                    </div>
+                    
                 </div>
             </div>
         </div>

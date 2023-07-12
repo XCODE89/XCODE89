@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    background-color: rgb(7, 12, 20);
+    min-height: 97vh;
 }
 
 

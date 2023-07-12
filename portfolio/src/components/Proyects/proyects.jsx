@@ -3,6 +3,7 @@ import proyectoCard from "../../images/proyecto_card.png"
 import Carrousel from "../Carrousel/carrousel";
 
 const Proyects = () => {
+    window.scrollTo(0, 0);
     return (
         <div className={style.container}>
             <Carrousel/>
