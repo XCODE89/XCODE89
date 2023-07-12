@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    height: 94vh;
     padding-top: 50px;
     background-color: rgb(7, 12, 20);
     min-height: 97vh;
@@ -35,7 +34,7 @@
 }
 
 .secondBlock {
-    margin-left: 17em;
+    margin-left: 20em;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -46,22 +45,58 @@
     width: 25%;
     transition: 2s;
 }
+.linea{
+    margin-left: -40px;
+}
 .lineaOculta{
-    margin-left: -130px;
+    margin-left: -260px;
 }
 
 .infoContainer {
     display: flex;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin: 1em;
+}
+
+.photo {
+    height: 160px;
+    border-radius: 50%;
 }
 
 .socialContainer {
     display: flex;
+    justify-content: center;
+}
+
+.imageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 227, 229);
+    margin: 1em;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+.socialImg {
+    height: 3em;
 }
 
 .formMap {
     display: flex;
-    margin-top: 4em;
+    margin-top: 2em;
     justify-content: center;
+    /* border-top: rgb(187, 209, 234) 2px solid; */
+    padding-top: 4em;
 }
 
 .formContainer {
@@ -71,6 +106,11 @@
     padding: 2em;
     align-items: center;
     border-radius: 20px;
+}
+
+.formTitle{
+    font-size: 1.4em;
+    margin-bottom: 1em;
 }
 
 .input {
