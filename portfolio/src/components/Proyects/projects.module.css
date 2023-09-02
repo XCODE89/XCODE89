@@ -7,30 +7,14 @@
     min-height: 97vh;
 }
 
-
-
 .cardsContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.cardContainer {
+.titleCont {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cardImageCont {
-    height: 10em;
-}
-
-.cardImage {
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.tecBoxCard {
-    display: flex;
-    
+    width: 100%;
+    text-align: left;
 }

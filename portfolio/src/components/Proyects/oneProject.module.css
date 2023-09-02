@@ -1,0 +1,20 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.cardImageCont {
+    height: 10em;
+}
+
+.cardImage {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.tecBoxCard {
+    display: flex;
+    
+}

@@ -1,0 +1,30 @@
+.title {
+    font-size: 50px;
+    color: rgb(161, 198, 234);
+    letter-spacing: 0.1em;
+    white-space: nowrap
+}
+
+.linea, .lineaOculta {
+    border-top: 5px solid rgb(218, 227, 229); 
+    width: 80%;
+    transition: 2s;
+}
+.linea{
+    margin-left: 30%;
+}
+
+.shadowTitle, .shadowTitleOculto {
+    width: 100%;
+    font-size: 150px;
+    font-weight: bolder;
+    transition: 2s;
+}
+.shadowTitle {
+    margin-top: -42px;
+    color: rgb(218, 227, 229, 0.1);
+    position: absolute;
+}
+.shadowTitleOculto{
+    color: rgb(218, 227, 229, 0);
+}

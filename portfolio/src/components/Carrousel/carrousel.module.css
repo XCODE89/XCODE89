@@ -3,10 +3,10 @@
     flex-direction: row;
     align-items: center;
     position: relative;
-    background-color: grey;
     height: 23em;
     justify-content: center;
     margin: 1em;
+    width: 100%;
 }
 
 .carrouselItem, .carrouselItemActive {

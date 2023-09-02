@@ -23,9 +23,29 @@
     color: rgb(218, 227, 229, 0.1);
 }
 
+.titleEffecto {
+    display: flex;
+}
+
 .title {
+    display: flex;
     font-size: 50px;
-    color: rgb(161, 198, 234)
+    color: rgb(161, 198, 234);
+}
+
+.lineaOculta .linea {
+    background-color: red;
+    width: 50%;
+    margin-left: 50%;
+    text-align: right;
+    height: 5px;
+    transition: 2s;
+}
+.linea{
+    margin-left: -40px;
+}
+.lineaOculta{
+    margin-left: -260px;
 }
 
 .content {
@@ -33,11 +53,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(187, 209, 234)
+    color: rgb(187, 209, 234);
+
 }
 
 .text {
+    display: flex;
     font-size: 18px;
+    padding: 20px;
+    width: 90%;
 }
 
 .buttons {
@@ -47,24 +71,21 @@
     margin: 5px;
 }
 
-.button {
-    padding: 5px;
-    padding-inline: 30px;
-}
 
 .techsContainer {
     display: flex;
     margin: 1em;
-    margin-top: 5em;
+    margin-top: 2em;
     justify-content: space-evenly;
     align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
 }
-
 .tech {
     display: flex;
     height: 50px;
     align-items: center;
-    margin: 0.5em;
+    margin: 0.3em;
 }
 
 .image {
@@ -74,3 +95,45 @@
     height: 35px;
     padding: 5px;
 }
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: rgb(80, 125, 188);
+    background-size: 400%;
+    color: rgb(7, 12, 20);
+    border: none;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .buttonContent {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    color: rgb(7, 12, 20);
+    font-weight: 700;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(161, 198, 234) 10.8%,
+      rgb(187, 209, 234) 94.3%
+    );
+    transition: all 0.475s;
+  }

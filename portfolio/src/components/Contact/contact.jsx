@@ -4,6 +4,8 @@ import {BiPhone, BiEnvelope} from "react-icons/bi"
 import github from "../../images/logos/Github.png"
 import linked from "../../images/logos/LinkedIn.png"
 import foto from "../../images/desconocida.jpg"
+import Titulo from "../Titulo/titulo"
+import 'flag-icon-css/css/flag-icons.css'
 
 const Contact = () => {
     const [start, setStart] = useState(false)
@@ -14,27 +16,24 @@ const Contact = () => {
     return (
         <div className={style.container}>
             <div className={style.titleContainer}>
-                <h1 className={style.title}>
-                    CONTÁCTAME
-                </h1>
+                <Titulo titulo="CONTÁCTAME" inicial="C"/>
             </div>
 
-            <div>
+            <div className={style.secondContainer}>
                 <div className={style.content}>
-                    <div className={start?style.shadowTitle:style.shadowTitleOculto}>C</div>
                     <div className={style.secondBlock}>
-                        <div className={start?style.linea:style.lineaOculta}></div>
                         <div className={style.infoContainer}>
                             <div className={style.infoBox}>
                                 <img src={foto} className={style.photo}/>
                             </div>
                             <div className={style.infoBox}>
                                 <BiPhone size={40} color="#dae3e5"/>
-                                <p>989957042</p>
+                                <p><span className="flag-icon flag-icon-pe"></span>+51 989957042</p>
+                                <p><span className="flag-icon flag-icon-cl"></span>+56 983917124</p>
                             </div>
                             <div className={style.infoBox}>
                                 <BiEnvelope size={40} color="#dae3e5"/>
-                                <p>maph0989@gmail.com</p>
+                                <p>dm.aponte.h@gmail.com</p>
 
                             </div>
                         </div>

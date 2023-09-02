@@ -9,7 +9,8 @@ margin : 0;
 
 }
 
-/* paleta de colores:
+/* paleta de colores: */
+.a{
     background-color: rgb(7, 12, 20);
     background-color: rgb(80, 125, 188);
     background-color: rgb(161, 198, 234);
@@ -19,5 +20,6 @@ margin : 0;
     background-color: #507dbc;
     background-color: #a1c6ea;
     background-color: #bbd1ea;
-    background-color: #dae3e5;*/
+    background-color: #dae3e5;
+}
     

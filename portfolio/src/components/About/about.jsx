@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import style from "./about.module.css"
 import express from "../../images/logos/ExpressJs.png"
 import mongo from "../../images/logos/MongoDB.png"
@@ -5,29 +6,29 @@ import node from "../../images/logos/NodeJs.png"
 import postgre from "../../images/logos/PostgreSQL.png"
 import python from "../../images/logos/Python.png"
 import react from "../../images/logos/React.png"
+import Titulo from "../Titulo/titulo"
 
 const About = () => {
+    const [start, setStart] = useState(false)
     window.scrollTo(0, 0);
+    useEffect(()=>{
+        setStart(true)
+    },[])
     return (
         <div className={style.container}>
             <div className={style.titleContainer}>
-                <div>
-                    <h1 className={style.title}>
-                        SOBRE MI
-                    </h1>
-                    <div className={style.shadow}>
-                        S
-                    </div>
-                </div>
+                <Titulo titulo="SOBRE MI" inicial="S"/>
             </div>
             <div className={style.content}>
-                <p className={style.text}>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fuga quis nulla rerum vero blanditiis perferendis quo, sequi ullam, voluptatibus eveniet dolorum dolore, laboriosam esse aliquid sed ad placeat? Mollitia?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ipsum eius, nemo consequatur rem illo facilis odio, voluptatum corporis numquam rerum distinctio fuga dignissimos possimus facere eaque quia, quibusdam at!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quos sunt pariatur accusantium iure tenetur. Quas inventore, veritatis voluptatem quia fugit aliquid, quod quo vero iste facere, ullam facilis dolorum.
-                </p>
+                <div>
+                    <p className={style.text}>
+                    "¡Hola! Soy Miguel, un apasionado desarrollador web full stack en constante evolución. Mi trayectoria única me llevó de la biología al mundo de la tecnología. Recién adentrándome en este emocionante campo, he logrado concretar proyectos significativos que reflejan mi rápido aprendizaje y determinación. Cada día es una oportunidad para fusionar mi sólida formación científica con mi nueva pasión por el desarrollo, creando soluciones digitales que impactan. Además de codificar, creo en el poder de las habilidades blandas en un programador: comunicación efectiva, adaptabilidad y trabajo en equipo. Estoy emocionado por seguir aprendiendo y colaborar en proyectos desafiantes que marquen la diferencia."
+                    </p>
+                </div>
                 <div className={style.buttons}>
-                    <button className={style.button}>descargar cv</button>
+                    <button className={style.button}>
+                        <span class={style.buttonContent}>Download </span>
+                    </button>
                 </div>
                 <div className={style.techsContainer}>
                     <div className={style.tech}>

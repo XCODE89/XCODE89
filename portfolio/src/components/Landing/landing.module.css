@@ -15,16 +15,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 
-.content{
+.content, .content2{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  margin-left: -3em;
+  margin-left: -40px;
   font-size: 50px;
   color: rgb(218, 227, 229);
+  padding: 20px;
 }
+.content2 {
+  font-size: 30px;
+}
+
 
 .languajes {
   display: flex;
@@ -32,12 +38,52 @@
 }
 
 .image {
-  width: 30em;
+  display: flex ;
+  width: 50%;
+  min-width: 380px;
+  padding: 50px;
 }
 
-.button {
+.button2 {
   text-align: center;
-  width: 100px;
+  color: rgb(161, 198, 234)
+  /* width: 100px;
   background-color: white;
-  text-decoration: none;
+  text-decoration: none; */
+}
+.button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid rgb(80, 125, 188);
+  border-radius: 0.3em;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.button .spanButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: rgb(7, 12, 20);
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid rgb(80, 125, 188);
+  box-shadow: 0 0.4em 0.1em 0.019em rgb(161, 198, 234);
+}
+
+.button .spanButton:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 rgb(218, 227, 229);
+}
+
+.button .spanButton:not(hover) {
+  transition: all 1s;
 }
