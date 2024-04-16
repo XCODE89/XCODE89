@@ -1,13 +1,19 @@
+/* * {
+    border: 1px red solid;
+} */
+
 .container {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     background-color: rgb(7, 12, 20);
     min-height: 97vh;
+    gap: 60px;
 }
 
 .titleContainer {
     display: flex;
+    padding: 20px;
 }
 
 .title {
@@ -65,7 +71,7 @@
 .infoContainer {
     display: flex;
     justify-content: space-around;
-    margin: 1em;
+    /* margin: 1em; */
     flex-wrap: wrap;
 }
 
@@ -74,7 +80,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 280px;
+    width: 30%;
+    min-width: 200px;
     margin: 1em;
 }
 
@@ -93,7 +100,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(218, 227, 229);
+    background-color: rgba(218, 227, 229, 0.3);
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
     margin: 1em;
     width: 5em;
     height: 5em;
@@ -106,27 +114,35 @@
 
 .formMap {
     display: flex;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     justify-content: center;
     /* border-top: rgb(187, 209, 234) 2px solid; */
-    padding-top: 1em;
+    /* padding-top: 1em; */
 }
 
 .formContainer {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right top, rgb(218, 227, 229), rgb(161, 198, 234));
+    background-image: linear-gradient(to right top, rgba(80, 125, 188, 0.2), rgba(161, 198, 234, 0.2));
     padding: 2em;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 20px;
-    width: 25%;
-    min-width: 250px;
+    width: 40%;
+    /* min-width: 200px; */
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.5);
 }
 
 .formTitle{
     font-size: 1.4em;
     margin-bottom: 1em;
     display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(218, 227, 229); 
+}
+
+.label{
+    color: white;
 }
 
 .input {
@@ -134,9 +150,10 @@
     border-style: none;
     height: 2em;
     width: 100%;
-    background-color: rgb(80, 125, 188);
+    background-color: rgba(7, 12, 20, 0.3);
     color: white;
     padding-left: 0.5em;
+    margin: 5px 0;
 }
 .input:focus {
     outline: none;
@@ -155,4 +172,15 @@
     border-style: none;
     background-color: rgb(7, 12, 20);
     color: rgb(218, 227, 229); 
+}
+
+@media screen and (max-width: 600px) {
+
+    .formContainer {
+        width: 70%;
+    }
+    .content {
+        margin-left: 0;
+    }
+
 }

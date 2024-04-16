@@ -1,13 +1,23 @@
 import { NavLink } from "react-router-dom"
 import style from "./navBar.module.css"
-import { useState } from "react"
+import { useState, useContext, useEffect } from "react"
+import { AuthContext } from "../../context/CounterContext"
 
 const NavBar = () => {
-    const [selected, setSelected] = useState("")
-    const [item, setItem] = useState("")
-    const handleItem = (e) => {
-        setSelected(e.target.textContent)
+    const {selected, setSelectedItem} = useContext(AuthContext)
 
+    useEffect(() => {
+        console.log("**************", selected)
+        const storedSelected = localStorage.getItem("selected");
+        if (storedSelected) {
+            setSelectedItem(storedSelected);
+        }
+    }, [selected]);
+
+    const handleItem = (e) => {
+        console.log("/*/*/*/*", e.target.textContent)
+        setSelectedItem(e.target.textContent)
+        localStorage.setItem("selected", e.target.textContent);
     }
     return (
         <div className={style.container}>

@@ -6,6 +6,9 @@
     background-color: rgb(7, 12, 20);
     min-height: 97vh;
 }
+.link {
+    text-decoration: none;
+}
 
 .titleContainer {
     display: flex;

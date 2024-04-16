@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import style from "./contact.module.css"
 import {BiPhone, BiEnvelope} from "react-icons/bi"
 import github from "../../images/logos/Github.png"
@@ -6,6 +6,7 @@ import linked from "../../images/logos/LinkedIn.png"
 import foto from "../../images/desconocida.jpg"
 import Titulo from "../Titulo/titulo"
 import 'flag-icon-css/css/flag-icons.css'
+import emailjs from "@emailjs/browser"
 
 const Contact = () => {
     const [start, setStart] = useState(false)
@@ -13,6 +14,19 @@ const Contact = () => {
     useEffect(()=>{
         setStart(true)
     },[])
+
+    const refForm = useRef()
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const serviceId = "service_1g259zi"
+        const templateId= "template_xf71vpa"
+        const apikey = "TDQYV0-3LIL-sVMrt"
+
+        emailjs.sendForm(serviceId,templateId,refForm.current,apikey)
+        .then(result => refForm.current.reset())
+        .catch(error => console.error(error))
+    }
     return (
         <div className={style.container}>
             <div className={style.titleContainer}>
@@ -34,15 +48,14 @@ const Contact = () => {
                             <div className={style.infoBox}>
                                 <BiEnvelope size={40} color="#dae3e5"/>
                                 <p>dm.aponte.h@gmail.com</p>
-
-                            </div>
-                        </div>
-                        <div className={style.socialContainer}>
-                            <div className={style.imageBox}>
-                                <img src={linked} className={style.socialImg}/>
-                            </div>
-                            <div className={style.imageBox}>
-                                <img src={github} className={style.socialImg}/>
+                                <div className={style.socialContainer}>
+                                    <div className={style.imageBox}>
+                                        <img src={linked} className={style.socialImg}/>
+                                    </div>
+                                    <div className={style.imageBox}>
+                                        <img src={github} className={style.socialImg}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -51,16 +64,16 @@ const Contact = () => {
 
             <div className={style.formMap}>
                 {/* <div>map</div> */}
-                <form className={style.formContainer}>
+                <form ref={refForm} className={style.formContainer} onSubmit={handleSubmit}>
                     <div className={style.formTitle}>Envíame un mensaje!</div>
-                    <label htmlFor="name">Nombre:</label>
-                    <input type="text" name="name" className={style.input}></input>
-                    <label htmlFor="email">Correo:</label>
-                    <input type="email" name="email" className={style.input}></input>
-                    <label htmlFor="subject">Asunto:</label>
-                    <input type="text" name="subject" className={style.input}></input>
-                    <label htmlFor="message">Mensaje:</label>
-                    <textarea type="textarea" name="message" className={`${style.input} ${style.message}`}></textarea>
+                    <label htmlFor="name" className={style.label}>Nombre:</label>
+                    <input type="text" name="name" className={style.input} required></input>
+                    <label htmlFor="email" className={style.label}>Correo:</label>
+                    <input type="email" name="email" className={style.input} required></input>
+                    <label htmlFor="subject" className={style.label}>Asunto:</label>
+                    <input type="text" name="subject" className={style.input} required></input>
+                    <label htmlFor="message" className={style.label}>Mensaje:</label>
+                    <textarea type="textarea" name="message" className={`${style.input} ${style.message}`} required></textarea>
                     <button className={style.submit}>ENVIAR</button>
                 </form>
             </div>

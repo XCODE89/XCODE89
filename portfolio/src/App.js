@@ -6,10 +6,12 @@ import Landing from "./components/Landing/landing";
 import About from "./components/About/about"
 import Projects from "./components/Proyects/projects"
 import Contact from "./components/Contact/contact"
+import ContextProvider from "./context/CounterContext";
 // import Titulo from "./components/Titulo/titulo"
 
 function App() {
   return (
+    <ContextProvider>
       <div className={style.app}>
         <NavBar/>
         <Routes>
@@ -20,6 +22,7 @@ function App() {
           {/* <Route path="/contact" element={<Titulo titulo="TITULO" inicial="T"/>}/> */}
         </Routes>
       </div>
+    </ContextProvider>
   );
 }
 

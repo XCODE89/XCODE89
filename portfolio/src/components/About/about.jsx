@@ -6,6 +6,7 @@ import node from "../../images/logos/NodeJs.png"
 import postgre from "../../images/logos/PostgreSQL.png"
 import python from "../../images/logos/Python.png"
 import react from "../../images/logos/React.png"
+import django from "../../images/logos/Django.png"
 import Titulo from "../Titulo/titulo"
 
 const About = () => {
@@ -22,12 +23,14 @@ const About = () => {
             <div className={style.content}>
                 <div>
                     <p className={style.text}>
-                    "¡Hola! Soy Miguel, un apasionado desarrollador web full stack en constante evolución. Mi trayectoria única me llevó de la biología al mundo de la tecnología. Recién adentrándome en este emocionante campo, he logrado concretar proyectos significativos que reflejan mi rápido aprendizaje y determinación. Cada día es una oportunidad para fusionar mi sólida formación científica con mi nueva pasión por el desarrollo, creando soluciones digitales que impactan. Además de codificar, creo en el poder de las habilidades blandas en un programador: comunicación efectiva, adaptabilidad y trabajo en equipo. Estoy emocionado por seguir aprendiendo y colaborar en proyectos desafiantes que marquen la diferencia."
+                    ¡Hola! Soy Miguel, un desarrollador web full stack con un trasfondo diverso. Mi capacidad de adaptación se destaca en proyectos que reflejan mi rápido aprendizaje. Fusiono mi sólida formación con la tecnología, creando soluciones digitales impactantes. Además de programar, valoro habilidades blandas como comunicación efectiva y trabajo en equipo. Emocionado por aprender y contribuir a proyectos desafiantes que dejen huella en el mundo digital. 🚀✨
                     </p>
                 </div>
                 <div className={style.buttons}>
                     <button className={style.button}>
-                        <span class={style.buttonContent}>Download </span>
+                        <a href="./CV_DANTE_APONTE.pdf" download className={style.link}>
+                            <span className={style.buttonContent}>Descargar CV</span>
+                        </a>
                     </button>
                 </div>
                 <div className={style.techsContainer}>
@@ -48,6 +51,9 @@ const About = () => {
                     </div>
                     <div className={style.tech}>
                         <img src={python} className={style.image}/>
+                    </div>
+                    <div className={style.tech}>
+                        <img src={django} className={style.image}/>
                     </div>
                     
                 </div>
