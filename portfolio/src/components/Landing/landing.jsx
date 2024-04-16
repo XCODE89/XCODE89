@@ -6,6 +6,8 @@ import ParticlesBackground from "../Particles/particlesBackground";
 import { AuthContext } from '../../context/CounterContext';
 import github from "../../images/logos/Github.png"
 import linked from "../../images/logos/LinkedIn.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Landing = () => {
   window.scrollTo(0, 0);
@@ -30,14 +32,14 @@ const Landing = () => {
 
               <div className={style.socialContainer}>
                 <button className={style.imageButton}>
-                    <div className={style.imageBox}>
-                        <img src={linked} className={style.socialImg}/>
-                    </div>
+                  <div className={style.imageBox}>
+                    <FaLinkedin className={style.socialImg}/>
+                  </div>
                 </button>
                 <button className={style.imageButton}>
-                <div className={style.imageBox}>
-                        <img src={github} className={style.socialImg}/>
-                    </div>
+                  <div className={style.imageBox}>
+                    <FaGithub className={style.socialImg}/>
+                  </div>
                 </button>
                 </div>
             </div>

@@ -89,6 +89,7 @@
 }
 .imageContainer2 {
   display: none;
+  padding: 0 3em;
 }
 
 .image {
@@ -168,17 +169,32 @@
 }
 
 .socialImg {
-  height: 3em;
+  height: 3em;  
+  width: 3em;
+  color: var(--title-color);
   /* background-color: #212121;
   margin: 5px; */
 }
 
 @media (max-width: 768px) {
+
   .grid {
+    max-width: 500px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 10px
+  }
+
+  .content, .content2{
+    font-size: 25px;
+  }
+
+  .textContainer {
+    margin-top: 20%;
+    text-align: center;
+    align-items: center;
+    padding: 0;
   }
 
   .imageContainer {
@@ -187,6 +203,20 @@
 
   .imageContainer2 {
     display: block;
+  }
+
+  .imageBox {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .socialImg {
+    height: 2.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 35px;
   }
 }
 
