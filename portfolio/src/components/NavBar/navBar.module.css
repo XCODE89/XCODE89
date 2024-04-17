@@ -63,12 +63,6 @@
 @media (max-width: 768px) {
     .container {
         display: none;
-        /* display: block;
-        width: 100%;
-        background-color: rgba(7, 12, 20, 0.6);
-        padding: 5px;
-        height: 100%;
-        backdrop-filter: blur(8px); */
     }
 
     .toggle {

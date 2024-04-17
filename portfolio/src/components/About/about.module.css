@@ -5,9 +5,21 @@
     padding-top: 50px;
     background-color: rgb(7, 12, 20);
     min-height: 97vh;
+    flex-direction: column;
+    gap: 2em;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px
+}
+
 .link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .titleContainer {
@@ -64,7 +76,6 @@
     display: flex;
     font-size: 18px;
     padding: 20px;
-    width: 90%;
 }
 
 .buttons {
@@ -77,25 +88,53 @@
 
 .techsContainer {
     display: flex;
-    margin: 1em;
-    margin-top: 2em;
-    justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em 0;
+    background-color: rgb(15, 23, 35);
+    gap: 2em;
+}
+
+.skills  {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.skillBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(7, 12, 20);
+    border-radius: 16px;
+    padding: 20px;
+    gap: 1em;
     flex-wrap: wrap;
 }
 .tech {
     display: flex;
-    height: 50px;
+    flex-direction: column;
     align-items: center;
-    margin: 0.3em;
+}
+
+.techName {
+    color: var(--title-color);
+
+}
+
+.techLevel {
+    color: rgb(187, 209, 234);
 }
 
 .image {
-    border-radius: 5px;
+    border-radius: 25px;
     object-fit: content;
     background-color: rgb(218, 227, 229);
-    height: 35px;
+    height: 50px;
     padding: 5px;
 }
 
@@ -104,39 +143,66 @@
     overflow: hidden;
     height: 3rem;
     padding: 0 2rem;
-    border-radius: 1.5rem;
+    border-radius: .5rem;
     background: rgb(80, 125, 188);
     background-size: 400%;
     color: rgb(7, 12, 20);
     border: none;
+    display: flex;
+    align-items: center;
   }
   
-  .button:hover::before {
+.button:hover::before {
     transform: scaleX(1);
-  }
-  
-  .buttonContent {
-    position: relative;
-    z-index: 1;
-    font-size: 20px;
-    color: rgb(7, 12, 20);
-    font-weight: 700;
-  }
-  
-  .button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgb(161, 198, 234) 10.8%,
-      rgb(187, 209, 234) 94.3%
-    );
-    transition: all 0.475s;
-  }
+}
+.button:hover .icon {
+    color: rgb(80, 125, 188);
+    z-index: 1000;
+}
+
+.icon {
+    margin-left: 20px;
+    padding: 0;
+    color: #a1c6ea;
+}
+
+.buttonContent {
+position: relative;
+z-index: 1;
+font-size: 20px;
+color: rgb(7, 12, 20);
+font-weight: 700;
+}
+
+.button::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+transform: scaleX(0);
+transform-origin: 0 100%;
+width: 100%;
+height: inherit;
+border-radius: inherit;
+background: linear-gradient(
+    82.3deg,
+    rgb(161, 198, 234) 10.8%,
+    rgb(187, 209, 234) 94.3%
+);
+transition: all 0.5s;
+}
+
+@media (max-width: 768px) {
+
+    .grid {
+      max-width: 500px;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      gap: 10px
+    }
+
+    .titleContainer {
+        align-items: flex-start;
+    }
+}

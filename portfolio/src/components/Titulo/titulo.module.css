@@ -1,7 +1,6 @@
-
 .title {
     font-size: 50px;
-    color: rgb(161, 198, 234);
+    color: var(--title-color);
     letter-spacing: 0.1em;
     white-space: nowrap
 }
@@ -22,7 +21,7 @@
 }
 .shadowTitle {
     margin-top: -42px;
-    color: rgb(218, 227, 229, 0.1);
+    color: rgb(218, 227, 229, 0.05);
     position: absolute;
 }
 .shadowTitleOculto{
@@ -30,9 +29,8 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .title {
-        font-size: 25px;
+        font-size: 40px;
     }
 
 }
