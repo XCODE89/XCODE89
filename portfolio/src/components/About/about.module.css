@@ -1,6 +1,7 @@
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 97vh;
     padding-top: 50px;
     background-color: rgb(7, 12, 20);
@@ -28,6 +29,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 10px;
 }
 
 .shadow {
@@ -44,8 +46,8 @@
 
 .title {
     display: flex;
-    font-size: 50px;
-    color: rgb(161, 198, 234);
+    font-size: 40px;
+    color:  var(--title-color);
 }
 
 .lineaOculta .linea {
@@ -107,18 +109,30 @@
 
 .skillBox {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(7, 12, 20);
     border-radius: 16px;
     padding: 20px;
     gap: 1em;
+}
+
+.skillsList {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
     flex-wrap: wrap;
 }
+
+.skillGroup {
+    color: rgb(161, 198, 234)
+}
+
 .tech {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.2em;
 }
 
 .techName {
@@ -204,5 +218,6 @@ transition: all 0.5s;
 
     .titleContainer {
         align-items: flex-start;
+        padding: 0 20px;
     }
 }
