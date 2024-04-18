@@ -51,17 +51,17 @@ const About = () => {
                 <h2 className={style.title}>HABILIDADES</h2>
                 <div className={style.skills}>
                     <div className={style.skillBox}>
-                        <h3 className={style.skillGroup}>LANGUAGES</h3>
+                        <h3 className={style.skillGroup}>LENGUAJES</h3>
                         <div className={style.skillsList}>
                             <div className={style.tech}>
                                 <IoLogoJavascript className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Javascript</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <FaPython className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Python</h4>
-                                <h5 className={style.techLevel}>Basic</h5>
+                                <h5 className={style.techLevel}>Básico</h5>
                             </div>
                         </div>
                     </div>
@@ -72,27 +72,27 @@ const About = () => {
                             <div className={style.tech}>
                                 <FaReact className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>React</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <FaCss3Alt className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>CSS</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <FaHtml5 className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>HTML</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <SiTailwindcss className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Tailwind</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <FaBootstrap className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Bootstrap</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                         </div>
                     </div>
@@ -103,17 +103,17 @@ const About = () => {
                             <div className={style.tech}>
                                 <FaNodeJs className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>NodeJS</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <SiExpress className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>ExpressJS</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <SiDjango className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Django</h4>
-                                <h5 className={style.techLevel}>Basic</h5>
+                                <h5 className={style.techLevel}>Básico</h5>
                             </div>
                         </div>
                     </div>
@@ -124,12 +124,12 @@ const About = () => {
                             <div className={style.tech}>
                                 <BiLogoPostgresql className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>PostgreSQL</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <SiMongodb className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>MongoDB</h4>
-                                <h5 className={style.techLevel}>Basic</h5>
+                                <h5 className={style.techLevel}>Básico</h5>
                             </div>
                         </div>
                     </div>
@@ -140,12 +140,12 @@ const About = () => {
                             <div className={style.tech}>
                                 <FaGitAlt className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Git</h4>
-                                <h5 className={style.techLevel}>Intermediate</h5>
+                                <h5 className={style.techLevel}>Intermedio</h5>
                             </div>
                             <div className={style.tech}>
                                 <FaDocker className={style.image} color={"var(--title-color)"} size={40}/>
                                 <h4 className={style.techName}>Docker</h4>
-                                <h5 className={style.techLevel}>Basic</h5>
+                                <h5 className={style.techLevel}>Básico</h5>
                             </div>
                         </div>
                     </div>

@@ -37,23 +37,22 @@ const Contact = () => {
                 <div className={style.content}>
                     <div className={style.secondBlock}>
                         <div className={style.infoContainer}>
-                            <div className={style.infoBox}>
+                            <div className={style.imageContent}>
                                 <img src={foto} className={style.photo}/>
                             </div>
-                            <div className={style.infoBox}>
-                                <BiPhone size={40} color="#dae3e5"/>
-                                <p><span className="flag-icon flag-icon-pe"></span>+51 989957042</p>
-                                <p><span className="flag-icon flag-icon-cl"></span>+56 983917124</p>
-                            </div>
-                            <div className={style.infoBox}>
-                                <BiEnvelope size={40} color="#dae3e5"/>
-                                <p>dm.aponte.h@gmail.com</p>
-                                <div className={style.socialContainer}>
-                                    <div className={style.imageBox}>
-                                        <img src={linked} className={style.socialImg}/>
+                            <div className={style.contactInfo}>
+                                <div className={style.infoBox}>
+                                    <BiPhone size={30} color="#dae3e5"/>
+                                    <div className={style.info}>
+                                        <p><span className="flag-icon flag-icon-pe"></span>+51 989957042</p>
+                                        <p><span className="flag-icon flag-icon-cl"></span>+56 983917124</p>
                                     </div>
-                                    <div className={style.imageBox}>
-                                        <img src={github} className={style.socialImg}/>
+                                </div>
+                                <div className={style.infoBox}>
+                                    <BiEnvelope size={30} color="#dae3e5"/>
+                                    {/* <BiPhone size={40} color="#dae3e5"/> */}
+                                    <div className={style.info}>
+                                        <p>dm.aponte.h@gmail.com</p>
                                     </div>
                                 </div>
                             </div>

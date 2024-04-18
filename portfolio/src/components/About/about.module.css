@@ -105,6 +105,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
+    width: 80%;
 }
 
 .skillBox {
@@ -125,7 +126,7 @@
 }
 
 .skillGroup {
-    color: rgb(161, 198, 234)
+    color: #a1c6ea
 }
 
 .tech {
@@ -137,11 +138,14 @@
 
 .techName {
     color: var(--title-color);
+    font-weight: 600;
 
 }
 
 .techLevel {
     color: rgb(187, 209, 234);
+    font-weight: 400;
+    letter-spacing: .1em;
 }
 
 .image {

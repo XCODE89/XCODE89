@@ -71,18 +71,38 @@
 .infoContainer {
     display: flex;
     justify-content: space-around;
-    /* margin: 1em; */
     flex-wrap: wrap;
+}
+
+.imageContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    min-width: 200px;
 }
 
 .infoBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    width: 30%;
+    justify-content: flex-start;
     min-width: 200px;
-    margin: 1em;
+    gap: 1em;
+}
+
+.contactInfo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
 }
 
 .photo {
@@ -130,6 +150,7 @@
     width: 40%;
     /* min-width: 200px; */
     box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.5);
+    margin: 2em 0;
 }
 
 .formTitle{
@@ -138,7 +159,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    color: rgb(218, 227, 229); 
+    color: var(--title-color); 
 }
 
 .label{
@@ -156,7 +177,7 @@
     margin: 5px 0;
 }
 .input:focus {
-    outline: none;
+    outline: 1px solid #507dbc;
 }
 
 .message {
@@ -166,12 +187,20 @@
 .submit {
     margin: 0.5em;
     margin-top: 2em;
-    height: 2em;
-    width: 10em;
+    padding: 0.5em 3em;
     border-radius: 5px;
     border-style: none;
     background-color: rgb(7, 12, 20);
-    color: rgb(218, 227, 229); 
+    color: rgb(218, 227, 229);
+    align-self: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.submit:hover {
+    background-color: rgb(80, 125, 188);
+    transition: .5s;
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
