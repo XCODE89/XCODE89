@@ -9,10 +9,12 @@ const Carrousel = () => {
     const [slide, setSlide] = useState(0)
 
     const nextSlide = () => {
+        clearTimeout(slideTimeout);
         setSlide(slide === projects.length - 1 ? 0 : slide + 1)
     }
 
     const prevSlide = () => {
+        clearTimeout(slideTimeout);
         setSlide(slide === 0 ? projects.length - 1 :  slide - 1)
     }
 
@@ -20,9 +22,9 @@ const Carrousel = () => {
         setSlide(idx)
     } 
     
-    setTimeout(()=>{
-        nextSlide()
-    }, 3500)
+    let slideTimeout = setTimeout(() => {
+        nextSlide();
+    }, 3500);
 
     return (
             <div className={style.carousel}>
@@ -37,7 +39,7 @@ const Carrousel = () => {
                             alt={item.name} 
                             key={idx} 
                             className={slide === idx 
-                                ? style.slide 
+                                ? `${style.slide} ${style.slide_active}`
                                 : `${style.slide} ${style.slide_hidden}` }
                         />
                     )

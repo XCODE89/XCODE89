@@ -11,15 +11,19 @@
 .slide {
     border-radius: 0.5rem;
     box-shadow: 0 0 7px #666;
-    height: 100%;
-    width: 100%;
     aspect-ratio: 16/9;
     filter: sepia(100%) saturate(800%) hue-rotate(150deg) brightness(80%);
 }
 
+.slide_active {
+    height: 50%;
+    width: 50%;
+    transition: 0.5s;
+}
+
 .slide_hidden {
+    height: 50%;
     width: 0;
-    height: 100%;
     transition: 0.5s;
 }
 
