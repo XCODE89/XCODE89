@@ -1,17 +1,57 @@
 import { useEffect, useState } from "react";
-import proyectoBanner1 from "../../images/banner/proyecto_banner1.gif";
-import proyectoBanner2 from "../../images/banner/proyecto_banner2.gif";
-import proyectoBanner3 from "../../images/banner/proyecto_banner3.gif";
-import style from "./carrousel.module.css"
-import CarrouselItem from "./carrouselItem";
+import style from "./carrousel.module.css";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs";
+
+import projects from "../../utils/projects"
 
 const Carrousel = () => {
+
+    const [slide, setSlide] = useState(0)
+
+    const nextSlide = () => {
+        setSlide(slide === projects.length - 1 ? 0 : slide + 1)
+    }
+
+    const prevSlide = () => {
+        setSlide(slide === 0 ? projects.length - 1 :  slide - 1)
+    }
+
+    const selectSlide = (idx) => {
+        setSlide(idx)
+    } 
     
+    setTimeout(()=>{
+        nextSlide()
+    }, 3500)
+
     return (
-            <div className={style.bannerContainer}>
-                <CarrouselItem current={0} banner={proyectoBanner1}/>
-                <CarrouselItem current={1} banner={proyectoBanner2}/>
-                <CarrouselItem current={2} banner={proyectoBanner3}/>
+            <div className={style.carousel}>
+                <BsArrowLeftCircleFill 
+                    className={`${style.arrow} ${style.arrow_left}`} 
+                    onClick={prevSlide}
+                />
+                {projects.map((item, idx) => {
+                    return (
+                        <img 
+                            src={item.gif} 
+                            alt={item.name} 
+                            key={idx} 
+                            className={slide === idx 
+                                ? style.slide 
+                                : `${style.slide} ${style.slide_hidden}` }
+                        />
+                    )
+                })}
+                <BsArrowRightCircleFill 
+                    className={`${style.arrow} ${style.arrow_right}`} 
+                    onClick={nextSlide}
+                />
+                <span className={style.indicators}>
+                    {projects.map((_,idx) => {
+                        return (
+                            <button key={idx} onClick={() =>selectSlide(idx)} className={slide === idx ? style.indicator : `${style.indicator} ${style.indicator_inactive}`}></button>)
+                    })}
+                </span>
             </div>
     )
 }

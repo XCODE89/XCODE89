@@ -1,6 +1,6 @@
 .title {
     font-size: 3em;
-    color: var(--title-color);
+    color: var(--color-600);
     letter-spacing: 0.1em;
     white-space: nowrap
 }

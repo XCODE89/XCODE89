@@ -9,11 +9,20 @@ margin : 0;
 
 }
 
-:root {
-    --title-color: #507dbc
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
 }
 
-/* paleta de colores: */
+:root {
+    --color-900: rgb(32, 32, 48);
+    --color-600: rgb(65, 234, 212);
+    --color-300: rgb(251, 255, 18);
+    --color-100: rgb(161, 23, 129);
+    --color-50: rgb(255, 255, 255);
+    --main-font: "Centra", sans-serif
+}
 .a{
     background-color: rgb(7, 12, 20);
     background-color: rgb(80, 125, 188);
@@ -25,5 +34,15 @@ margin : 0;
     background-color: #a1c6ea;
     background-color: #bbd1ea;
     background-color: #dae3e5;
+
+    background-color: rgb(32, 32, 48);
+    background-color: rgb(12, 15, 10);
+    background-color: rgb(255, 33, 111);
+    background-color: rgb(251, 255, 18);
+    background-color: rgb(65, 234, 212);
+    background-color: rgb(255, 255, 255);
+
+    background-color: #1AFFD5;
+    background-color: rgb(179, 0, 137);
 }
     

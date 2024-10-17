@@ -1,13 +1,67 @@
-.bannerContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.carousel {
     position: relative;
-    height: 23em;
+    display: flex;
     justify-content: center;
-    margin: 1em;
-    width: 100%;
+    align-items: center;
+    width: 80%;
+    height: 45vw;
+    overflow: hidden;
 }
 
+.slide {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 7px #666;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    filter: sepia(100%) saturate(800%) hue-rotate(150deg) brightness(80%);
+}
 
+.slide_hidden {
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+}
 
+.arrow {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-900);
+    filter:  drop-shadow(0 0 5px var(--color-600));
+    z-index: 1000;
+}
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow_left {
+    left: 1rem;
+}
+
+.arrow_right {
+    right: 1rem;
+}
+
+.indicators {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 200;
+}
+
+.indicator {
+    background-color: var(--color-600);
+    height: 0.75rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px var(--color-600);
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.indicator_inactive {
+    background-color: grey;
+}

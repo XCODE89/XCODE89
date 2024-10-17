@@ -38,7 +38,7 @@ const Contact = () => {
                     <div className={style.secondBlock}>
                         <div className={style.infoContainer}>
                             <div className={style.imageContent}>
-                                <img src={foto} className={style.photo}/>
+                                <img src={foto} className={style.photo} alt="logo"/>
                             </div>
                             <div className={style.contactInfo}>
                                 <div className={style.infoBox}>

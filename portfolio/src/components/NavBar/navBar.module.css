@@ -27,10 +27,10 @@
     width: 100%;
 }
 .open {
-    color: var(--title-color);
+    color: var(--color-600);
 }
 .close {
-    color: var(--title-color);
+    color: var(--color-600);
 }
 
 .itemContainer {
