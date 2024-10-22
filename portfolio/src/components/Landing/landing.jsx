@@ -1,12 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
 import style from "./landing.module.css"
-import darkModeImage from '../../assets/img/maph.png';
+import darkModeImage from '../../assets/img/maph2.png';
 import { NavLink } from 'react-router-dom';
 import ParticlesBackground from "../Particles/particlesBackground";
 import { AuthContext } from '../../context/CounterContext';
-import github from "../../images/logos/Github.png"
-import linked from "../../images/logos/LinkedIn.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Landing = () => {
@@ -57,7 +54,7 @@ const Landing = () => {
 
   const {setSelectedItem} = useContext(AuthContext)
     return (
-      <div className={style.container}>
+      <div className={style.container} id='home'>
           <ParticlesBackground/>
           <div className={style.grid}>
             <div className={style.imageContainer}>
@@ -72,7 +69,7 @@ const Landing = () => {
               <h3 className={style.description}>Con conocimiento avanzado en desarrollo de plataformas web y aplicaciones móviles, utilizando las últimas tecnologías para crear soluciones innovadoras y efectivas.</h3>
               <button className={style.button}>
                   <span className={style.spanButton}>
-                    <NavLink to="/about" className={style.button2} onClick={()=>setSelectedItem("SOBRE MI")}>CONÓCEME</NavLink>
+                    <a href="#about" className={style.button2} onClick={()=>setSelectedItem("SOBRE MI")}>CONÓCEME</a>
                   </span>
               </button>
 
@@ -93,9 +90,7 @@ const Landing = () => {
                 </button>
                 </div>
             </div>
-            <div className={style.imageContainer2}>
-              <img src={darkModeImage} className={style.image} alt='download'/>
-            </div>
+            
           </div>
         </div>
     );

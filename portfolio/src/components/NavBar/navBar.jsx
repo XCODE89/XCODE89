@@ -12,7 +12,6 @@ const NavBar = () => {
     const [openMenu, setOpenMenu] = useState(false)
 
     useEffect(() => {
-        console.log("**************", selected)
         const storedSelected = localStorage.getItem("selected");
         if (storedSelected) {
             setSelectedItem(storedSelected);
@@ -20,7 +19,6 @@ const NavBar = () => {
     }, [selected]);
 
     const handleItem = (e) => {
-        console.log("/*/*/*/*", e.target.textContent)
         setSelectedItem(e.target.textContent)
         setTimeout(()=> {
             setOpenMenu(false);
@@ -48,20 +46,20 @@ const NavBar = () => {
                     </div>
                     <div className={style.container2}>
                         <div className={style.itemContainer}>
-                            <NavLink to="/" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</NavLink>
-                            <div className={selected==="HOME"?style.shadow:null}></div>
+                            <a href="#home" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</a>
+                            <div className={selected==="HOME"?style.shadow:""}></div>
                         </div>
                         <div className={style.itemContainer}>
-                            <NavLink to="/about" className={selected==="SOBRE MI"?style.itemSelected:style.item} onClick={handleItem}>SOBRE MI</NavLink>
-                            <div className={selected==="SOBRE MI"?style.shadow:null}></div>
+                            <a href="#about" className={selected==="SOBRE MI"?style.itemSelected:style.item} onClick={handleItem}>SOBRE MI</a>
+                            <div className={selected==="SOBRE MI"?style.shadow:""}></div>
                         </div>
                         <div className={style.itemContainer}>
-                            <NavLink to="/projects" className={selected==="PROYECTOS"?style.itemSelected:style.item} onClick={handleItem}>PROYECTOS</NavLink>
-                            <div className={selected==="PROYECTOS"?style.shadow:null}></div>
+                            <a href="#projects" className={selected==="PROYECTOS"?style.itemSelected:style.item} onClick={handleItem}>PROYECTOS</a>
+                            <div className={selected==="PROYECTOS"?style.shadow:""}></div>
                         </div>
                         <div className={style.itemContainer}>
-                            <NavLink to="/contact" className={selected==="CONTACTO"?style.itemSelected:style.item} onClick={handleItem}>CONTACTO</NavLink>
-                            <div className={selected==="CONTACTO"?style.shadow:null}></div>
+                            <a href="#contact" className={selected==="CONTACTO"?style.itemSelected:style.item} onClick={handleItem}>CONTACTO</a>
+                            <div className={selected==="CONTACTO"?style.shadow:""}></div>
                         </div>
                     </div>
                 </>
@@ -76,19 +74,18 @@ const NavBar = () => {
             </div>
             <div className={style.container}>
                 <div className={style.itemContainer}>
-                    <NavLink to="/" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</NavLink>
-                    <div className={selected==="HOME"?style.shadow:null}></div>
+                    <a href="#home" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</a>href  #home                <div className={selected==="HOME"?style.shadow:""}></div>
                 </div>
                 <div className={style.itemContainer}>
-                    <NavLink to="/about" className={selected==="SOBRE MI"?style.itemSelected:style.item} onClick={handleItem}>SOBRE MI</NavLink>
-                    <div className={selected==="SOBRE MI"?style.shadow:null}></div>
+                    <a href="#about" className={selected==="SOBRE MI"?style.itemSelected:style.item} onClick={handleItem}>SOBRE MI</a>
+                    <div className={selected==="SOBRE MI"?style.shadow:""}></div>
                 </div>
                 <div className={style.itemContainer}>
-                    <NavLink to="/projects" className={selected==="PROYECTOS"?style.itemSelected:style.item} onClick={handleItem}>PROYECTOS</NavLink>
-                    <div className={selected==="PROYECTOS"?style.shadow:null}></div>
+                    <a href="#projects" className={selected==="PROYECTOS"?style.itemSelected:style.item} onClick={handleItem}>PROYECTOS</a>
+                    <div className={selected==="PROYECTOS"?style.shadow:""}></div>
                 </div>
                 <div className={style.itemContainer}>
-                    <NavLink to="/contact" className={selected==="CONTACTO"?style.itemSelected:style.item} onClick={handleItem}>CONTACTO</NavLink>
+                    <a href="#contact" className={selected==="CONTACTO"?style.itemSelected:style.item} onClick={handleItem}>CONTACTO</a>
                     <div className={selected==="CONTACTO"?style.shadow:null}></div>
                 </div>
             </div>

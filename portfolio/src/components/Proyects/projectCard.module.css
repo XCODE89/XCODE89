@@ -42,6 +42,7 @@
     transition: 0.5s ease-in-out;
     opacity: 0;
     width: 100%;
+    color: var(--color-50);
   }
   .proj_imgbx:hover .proj_txtx {
     top: 50%;
@@ -60,6 +61,11 @@
     letter-spacing: 0.8px;
 }
 
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .tech {
     background-color: var(--color-100);
     color: var(--color-50);
@@ -72,6 +78,9 @@
 @media (min-width: 576px) {
   .cardContainer {
     width: 48%;
+  }
+  .proj_txtx h4{
+    font-size: 22px;
   }
 }
 

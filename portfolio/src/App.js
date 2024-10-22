@@ -7,7 +7,7 @@ import About from "./components/About/about"
 import Projects from "./components/Proyects/projects"
 import Contact from "./components/Contact/contact"
 import ContextProvider from "./context/CounterContext";
-// import Titulo from "./components/Titulo/titulo"
+import ProjectInfo from "./components/Proyects/projectInfo";
 
 function App() {
   return (

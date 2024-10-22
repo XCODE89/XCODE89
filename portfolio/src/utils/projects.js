@@ -1,14 +1,17 @@
-import imgProject1 from "../images/banner/proyecto_banner1.gif"
+import outreachVidsGif from "../assets/img/outreach-vids.gif"
+import outreachVidsImg from "../assets/img/outreachvids.png"
 import imgProject2 from "../images/banner/proyecto_banner2.gif"
 import imgProject3 from "../images/banner/proyecto_banner3.gif"
 
 const projects = [
     {
-        gif : imgProject1,
-        name: "nombre1",
-        description: "lorem ipsum dolor sit amet, consect",
-        photo: imgProject1,
-        tecnologies : ["React", "CSS", "JavaScript"]
+        gif : outreachVidsGif,
+        name: "OUTREACH-VIDS",
+        description: "Es una herramienta diseñada para ayudar a las empresas a sobresalir en el competitivo mundo de los negocios. Enfocada en mejorar el alcance en frío, combina la personalización con tecnología de IA avanzada para generar videos personalizados y atractivos. Con OutreachVids, las empresas pueden captar la atención de su audiencia de manera más efectiva, creando conexiones genuinas a través de contenido visual hecho a medida.",
+        photo: outreachVidsImg,
+        tecnologies : ["TypeScript", "AWS", "OpenAI", "AzureAI", "React", "Microsoft"],
+        url: "http://bsa-2024-outreachvids-dev.eu-north-1.elasticbeanstalk.com/sign-in",
+        code: ""
 
     },
     {

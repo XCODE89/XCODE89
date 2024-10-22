@@ -2,13 +2,6 @@
 margin : 0;
 }
 
-.app {
-    /* background-color: rgb(7, 12, 20);
-    min-height: 97vh; */
-    /* overflow-y: visible; */
-
-}
-
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Book.ttf');
@@ -23,26 +16,8 @@ margin : 0;
     --color-50: rgb(255, 255, 255);
     --main-font: "Centra", sans-serif
 }
-.a{
-    background-color: rgb(7, 12, 20);
-    background-color: rgb(80, 125, 188);
-    background-color: rgb(161, 198, 234);
-    background-color: rgb(187, 209, 234);
-    background-color: rgb(218, 227, 229); 
-    background-color: #070c14;
-    background-color: #507dbc;
-    background-color: #a1c6ea;
-    background-color: #bbd1ea;
-    background-color: #dae3e5;
 
-    background-color: rgb(32, 32, 48);
-    background-color: rgb(12, 15, 10);
-    background-color: rgb(255, 33, 111);
-    background-color: rgb(251, 255, 18);
-    background-color: rgb(65, 234, 212);
-    background-color: rgb(255, 255, 255);
-
-    background-color: #1AFFD5;
-    background-color: rgb(179, 0, 137);
-}
+html {
+    scroll-behavior: smooth;
+  }
     

@@ -8,28 +8,20 @@ import projects from "../../utils/projects";
 const Proyects = () => {
     window.scrollTo(0, 0);
     return (
-        <div className={style.container}>
+        <div className={style.container} id="projects">
             <div className={style.titleCont}>
                 <Titulo titulo="PROYECTOS" inicial="P"/>
             </div>
             <Carrousel/>
             <div className={style.cardsContainer}>
-                {/* <OneProject imagen={proyectoCard}/>
-                <OneProject imagen={proyectoCard}/>
-                <OneProject imagen={proyectoCard}/>
-                <OneProject imagen={proyectoCard}/> */}
-                {
-                    projects.map((project, index) => {
-    console.log("aqui", project)
-
-                        return (
-                            <OneProject
-                            key={index}
-                            {...project}
-                            />
-                        )
-                    })
-                }
+                {projects.map((project, index) => {
+                    return (
+                        <OneProject
+                        key={index}
+                        {...project}
+                        />
+                    )
+                })};
             </div>
 
         </div>

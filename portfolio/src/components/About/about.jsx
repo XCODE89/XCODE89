@@ -5,7 +5,7 @@ import skillsData from "../../utils/skillsData.js";
 
 const About = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id="about">
             <div className={style.grid}>
                 <div className={style.titleContainer}>
                     <Titulo titulo="SOBRE MI" inicial="S"/>
