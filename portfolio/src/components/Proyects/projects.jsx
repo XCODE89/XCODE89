@@ -20,7 +20,7 @@ const Proyects = () => {
                         {...project}
                         />
                     )
-                })};
+                })}
             </div>
 
         </div>

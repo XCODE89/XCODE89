@@ -45,8 +45,6 @@ const ProjectInfo = () => {
             <section className={style.item_card_details}>
               <div className={style.bio_block}>
                 <h2 className={style.title}>{project.name}</h2>
-              </div>
-              <div>
                 <p className={style.bio_text}>
                   {project.description}
                 </p>

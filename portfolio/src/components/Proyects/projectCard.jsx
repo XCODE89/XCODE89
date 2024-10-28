@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import style from "./projectCard.module.css"
 const OneProject = ({ description, photo, name, tecnologies }) => {
-    console.log("uno", photo, name, description, tecnologies)
    return(
     <div className={style.cardContainer}>
         <div className={style.proj_imgbx}>

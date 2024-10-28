@@ -102,6 +102,11 @@
 	height: 100%;
 }
 
+.bio_block {
+	display: flex;
+	flex-direction: column;
+}
+
 .title {
 	color: #888;
 	opacity: 0.6;
