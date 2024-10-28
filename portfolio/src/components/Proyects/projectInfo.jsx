@@ -46,7 +46,7 @@ const ProjectInfo = () => {
               <div className={style.bio_block}>
                 <h2 className={style.title}>{project.name}</h2>
               </div>
-              <div className={style.scroll_block}>
+              <div>
                 <p className={style.bio_text}>
                   {project.description}
                 </p>
