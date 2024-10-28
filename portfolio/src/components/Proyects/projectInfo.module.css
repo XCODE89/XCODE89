@@ -2,9 +2,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* background-color: var(--color-900); */
 	min-height: 100vh;
 	padding-top: 12px;
+}
+
+.return {
+	position: fixed;
+	color: var(--color-600);
+	z-index: 10;
+	top: 16px;
+	right: 16px;
+	background: none;
+	border: none;
 }
 
 .grid_item {
@@ -60,6 +69,27 @@
 	background-position: center;
 	filter: blur(8px);
 	z-index: -1;
+}
+
+.techContainer {
+	display: flex;
+  	flex-wrap: wrap;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 6px;
+}
+.tech {
+	background-color: var(--color-100);
+    color: var(--color-50);
+    border-radius: 8px;
+    margin: 2px 4px;
+    padding: 2px 8px;
+	display: flex;
+	justify-content: center;
+	z-index: 1000;
+
 }
 
 .featured_image {
@@ -155,6 +185,9 @@
 	width: 100%;
 	border-radius: 0 0 0.45em 0.45em;
 }
+.on_back_noBorder {
+	border-radius: 0;
+}
 
 .wrapper.frontback_cards .on_back {
 	width: 50%;
@@ -167,7 +200,7 @@
 	background: linear-gradient(90deg, #72a1ff, #4972c1, var(--color-900), #4972c1, #72a1ff);
 	background-size: 400% 400%;
 	background-position: 0% 50%;
-	border-radius: 0 0 0.45em 0;
+	/* border-radius: 0 0 0.45em 0; */
 }
 
 .blue:hover {

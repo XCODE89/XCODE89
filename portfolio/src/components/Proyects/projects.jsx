@@ -6,7 +6,6 @@ import Titulo from "../Titulo/titulo"
 import projects from "../../utils/projects";
 
 const Proyects = () => {
-    window.scrollTo(0, 0);
     return (
         <div className={style.container} id="projects">
             <div className={style.titleCont}>

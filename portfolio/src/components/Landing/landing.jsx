@@ -7,9 +7,6 @@ import { AuthContext } from '../../context/CounterContext';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Landing = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  },[])
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

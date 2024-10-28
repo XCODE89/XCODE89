@@ -10,7 +10,6 @@ import emailjs from "@emailjs/browser"
 
 const Contact = () => {
     const [start, setStart] = useState(false)
-    window.scrollTo(0, 0);
     useEffect(()=>{
         setStart(true)
     },[])
