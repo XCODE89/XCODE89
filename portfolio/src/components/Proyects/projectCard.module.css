@@ -53,6 +53,7 @@
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.1em;
+    margin-bottom: 8px;
   }
 .proj_txtx span {
     font-style: italic;
@@ -61,17 +62,17 @@
     letter-spacing: 0.8px;
 }
 
-.techContainer {
-  display: flex;
-  flex-wrap: wrap;
+.button {
+  background-color: var(--color-900);
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-50);
 }
+.button:hover {
+  transition: 0.5s;
+  font-size: 17px;
 
-.tech {
-    background-color: var(--color-100);
-    color: var(--color-50);
-    border-radius: 8px;
-    margin: 2px;
-    padding: 2px 8px;
 }
 
 

@@ -2,11 +2,12 @@ import outreachVidsGif from "../assets/img/outreach-vids.gif"
 import outreachVidsImg from "../assets/img/outreachvids.png"
 import creameImg from "../assets/img/creame_Image.jpg"
 import creameGif from "../assets/img/creame_gif.gif"
+import mapacheImg from "../assets/img/mapache_image.jpg"
 
 const projects = [
     {
         gif : outreachVidsGif,
-        name: "OUTREACH-VIDS",
+        name: "Outreach-Vids",
         description: "Es una herramienta diseñada para ayudar a las empresas a sobresalir en el competitivo mundo de los negocios. Enfocada en mejorar el alcance en frío, combina la personalización con tecnología de IA avanzada para generar videos personalizados y atractivos. Con OutreachVids, las empresas pueden captar la atención de su audiencia de manera más efectiva, creando conexiones genuinas a través de contenido visual hecho a medida.",
         photo: outreachVidsImg,
         tecnologies : ["TypeScript", "AWS", "OpenAI", "AzureAI", "React"],
@@ -25,14 +26,16 @@ const projects = [
         video: "../assets/videos/sample.mp4",
         code: ""
     },
-    // {
-    //     gif : imgProject3,
-    //     name: "nombre3",
-    //     description: "lorem ipsum dolor sit amet, consect",
-    //     photo: imgProject3,
-    //     tecnologies : ["React", "CSS", "JavaScript"]
-
-    // }
+    {
+        gif : mapacheImg,
+        name: "Mapache Studio",
+        description: "Este proyecto es una demostración de mi habilidad para crear sitios web modernos y funcionales, adaptable a cualquier tipo de negocio. La estructura incluye múltiples secciones con contenido de ejemplo que puede personalizarse para ajustarse a las necesidades específicas de cualquier cliente. El proyecto refleja mi atención al detalle y mi capacidad para diseñar interfaces limpias y navegables, ideales para presentar los servicios y valores de cualquier marca o empresa.",
+        photo: mapacheImg,
+        tecnologies : ["React", "Redux", "Django"],
+        url:"https://mapache-studio.vercel.app/",
+        video: "",
+        code: ""
+    },
 ]
 
 export default projects;

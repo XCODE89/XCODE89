@@ -13,7 +13,6 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 7px #666;
     aspect-ratio: 16/9;
-    filter: sepia(100%) saturate(800%) hue-rotate(150deg) brightness(80%);
 }
 
 .slide_active {
@@ -34,7 +33,7 @@
     height: 2rem;
     color: var(--color-900);
     filter:  drop-shadow(0 0 5px var(--color-600));
-    z-index: 1000;
+    z-index: 10;
 }
 .arrow:hover {
     cursor: pointer;
@@ -52,7 +51,7 @@
     display: flex;
     position: absolute;
     bottom: 1rem;
-    z-index: 200;
+    z-index: 10;
 }
 
 .indicator {

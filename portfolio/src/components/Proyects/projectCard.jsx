@@ -7,7 +7,7 @@ const OneProject = ({ description, photo, name, tecnologies }) => {
             <img src={photo} alt={name} />
             <div className={style.proj_txtx}>
                 <h4>{name}</h4>
-                <Link to={`/project/${name}`}>Conoce mas</Link>
+                <Link to={`/project/${name}`} className={style.button}>Conoce mas</Link>
             </div>
         </div>
     </div>

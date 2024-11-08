@@ -5,7 +5,7 @@
     background-color: rgba(7, 12, 20, 0.9);
     box-shadow: 0 2px 10px rgb(7, 12, 20);
     position: fixed;
-    z-index: 100;
+    z-index: 20;
     padding-right: 10px;
 }
 
