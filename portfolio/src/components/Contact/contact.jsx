@@ -18,11 +18,11 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const serviceId = "service_1g259zi"
-        const templateId= "template_xf71vpa"
-        const apikey = "TDQYV0-3LIL-sVMrt"
+        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const apiKey = import.meta.env.VITE_EMAILJS_API_KEY;
 
-        emailjs.sendForm(serviceId,templateId,refForm.current,apikey)
+        emailjs.sendForm(serviceId,templateId,refForm.current,apiKey)
         .then(result => refForm.current.reset())
         .catch(error => console.error(error))
     }
