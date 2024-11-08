@@ -4,6 +4,7 @@
     align-items: center;
     margin: 5px 0;
     width: 100%;
+    height: 250px;
 }
 
 .proj_imgbx {
@@ -79,6 +80,7 @@
 @media (min-width: 576px) {
   .cardContainer {
     width: 48%;
+    height: 200px;
   }
   .proj_txtx h4{
     font-size: 22px;
