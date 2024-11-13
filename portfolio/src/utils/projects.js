@@ -3,6 +3,9 @@ import outreachVidsImg from "../assets/img/outreachvids.png"
 import creameImg from "../assets/img/creame_Image.jpg"
 import creameGif from "../assets/img/creame_gif.gif"
 import mapacheImg from "../assets/img/mapache_image.jpg"
+import chatAppGif from "../assets/img/chatApp_gif.gif"
+import chatAppImg from "../assets/img/chatApp_image.png"
+
 
 const projects = [
     {
@@ -35,6 +38,16 @@ const projects = [
         url:"https://mapache-studio.vercel.app/",
         video: "",
         code: ""
+    },
+    {
+        gif : chatAppGif,
+        name: "ChatApp",
+        description: "Este proyecto es una aplicación de chat en tiempo real que permite a los usuarios comunicarse de manera instantánea mediante salas de chat privadas, con autenticación segura y notificaciones en vivo.",
+        photo: chatAppImg,
+        tecnologies : ["React", "SocketIO", "MongoDB"],
+        url:"",
+        video: "",
+        code: "https://github.com/XCODE89/Chat"
     },
 ]
 

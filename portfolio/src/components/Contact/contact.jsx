@@ -18,9 +18,10 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-        const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-        const apiKey = import.meta.env.VITE_EMAILJS_API_KEY;
+        const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+        console.log("holis", serviceId)
+        const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+        const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
 
         emailjs.sendForm(serviceId,templateId,refForm.current,apiKey)
         .then(result => refForm.current.reset())
