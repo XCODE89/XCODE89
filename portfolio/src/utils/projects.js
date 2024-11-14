@@ -5,6 +5,8 @@ import creameGif from "../assets/img/creame_gif.gif"
 import mapacheImg from "../assets/img/mapache_image.jpg"
 import chatAppGif from "../assets/img/chatApp_gif.gif"
 import chatAppImg from "../assets/img/chatApp_image.png"
+import travelAppGif from "../assets/img/travelApp_gif.gif"
+import travelAppImg from "../assets/img/travelApp_image.png"
 
 
 const projects = [
@@ -37,7 +39,7 @@ const projects = [
         tecnologies : ["React", "Redux", "Django"],
         url:"https://mapache-studio.vercel.app/",
         video: "",
-        code: ""
+        code: "https://github.com/XCODE89/STUDIO"
     },
     {
         gif : chatAppGif,
@@ -48,6 +50,16 @@ const projects = [
         url:"",
         video: "",
         code: "https://github.com/XCODE89/Chat"
+    },
+    {
+        gif : travelAppGif,
+        name: "TravelApp",
+        description: "ssssssssssssssss",
+        photo: travelAppImg,
+        tecnologies : ["Typescript", "Redux"],
+        url:"https://travel-app-fawn-pi.vercel.app/sign-in",
+        video: "",
+        code: "https://github.com/XCODE89/TravelApp"
     },
 ]
 
