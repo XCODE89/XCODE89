@@ -74,7 +74,8 @@ const NavBar = () => {
             </div>
             <div className={style.container}>
                 <div className={style.itemContainer}>
-                    <a href="#home" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</a>href  #home                <div className={selected==="HOME"?style.shadow:""}></div>
+                    <a href="#home" className={selected==="HOME"?style.itemSelected:style.item} onClick={handleItem} >HOME</a>
+                    <div className={selected==="HOME"?style.shadow:""}></div>
                 </div>
                 <div className={style.itemContainer}>
                     <a href="#about" className={selected==="SOBRE MI"?style.itemSelected:style.item} onClick={handleItem}>SOBRE MI</a>
