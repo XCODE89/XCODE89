@@ -13,7 +13,7 @@ const About = () => {
                 <div className={style.content}>
                     <div>
                         <p className={style.text}>
-                        ¡Hola! Soy Miguel, un desarrollador web full stack con un trasfondo diverso. Mi capacidad de adaptación se destaca en proyectos que reflejan mi rápido aprendizaje. Fusiono mi sólida formación con la tecnología, creando soluciones digitales impactantes. Además de programar, valoro habilidades blandas como comunicación efectiva y trabajo en equipo. Emocionado por aprender y contribuir a proyectos desafiantes que dejen huella en el mundo digital. 🚀✨
+                        ¡Hola! Soy Miguel, desarrollador web full stack. Me especializo en crear soluciones digitales funcionales y bien estructuradas. Disfruto trabajar en equipo, optimizar procesos y escribir código limpio y escalable. Más que programar, me enfoco en entender problemas y encontrar la mejor forma de resolverlos. Siempre busco desafíos que me permitan seguir creciendo y aportando valor. 🚀✨
                         </p>
                     </div>
                     <div>
