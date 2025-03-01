@@ -7,9 +7,22 @@ import chatAppGif from "../assets/img/chatApp_gif.gif"
 import chatAppImg from "../assets/img/chatApp_image.png"
 import travelAppGif from "../assets/img/travelApp_gif.gif"
 import travelAppImg from "../assets/img/travelApp_image.png"
+import luminGif from "../assets/img/lumin_gif.gif"
+import luminImg from "../assets/img/lumin_image.png"
 
 
 const projects = [
+    {
+        gif : luminGif,
+        name: "Lumin",
+        description: "Es una plataforma de chat en linea enfocado enfocado en el ambito empresarial, cuenta con traductor automatico impulsado por IA ",
+        photo: luminImg,
+        tecnologies : ["Javascript", "Socket.io", "OpenAI", "Express", "React"],
+        url: "https://pruebas-v467.vercel.app/login",
+        video: "",
+        code: ""
+
+    },
     {
         gif : outreachVidsGif,
         name: "Outreach-Vids",
